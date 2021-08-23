@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery </title>
+        <link rel="stylesheet" href="F:\website\Other\image.css">
+    </head>
+    <body>
+        <h2>Mobile Photos</h2>
+        <div class="full-img" id="fullimgbox">
+            <img src="img.jpg" id="fullimg" >
+            <span onclick="closeimg()"> X</span>
+        </div>
+        <div class="gallery">
+            <img src="ph.jpg"  onclick="openfullimg(this.src)" >
+            <img src="ph1.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph2.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph3.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph4.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph5.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph6.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph7.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph8.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph9.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph10.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph11.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph12.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph13.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph14.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph15.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph16.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph17.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph18.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph19.jpg" onclick="openfullimg(this.src)" >
+            <img src="ph20.jpg" onclick="openfullimg(this.src)" >
+        </div>
+        <script>
+            var fullimgbox = document.getElementById("fullimgbox");
+            var fullimg = document.getElementById("fullimg");
+            function openfullimg(pic){
+                fullimgbox.style.display = "flex";
+                fullimg.src= pic;
+            }
+            function closeimg(){
+                fullimgbox.style.display = "none";
+
+            }
+        </script>
+
+        
+    </body>
+
+</html>

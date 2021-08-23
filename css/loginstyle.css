@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Palette+Mosaic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*------ Page -------*/
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(65, 58, 58, 0.5)),url(../mobile.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center ;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+
+}
+ul li{
+    display: inline-flex; /* Shows Single Line */
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+}
+ul li a:hover{
+    background-color: yellow;
+    color:black;
+
+}
+ul li.active a{
+    background-color: yellow;
+    color: black;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height:middle;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.main ul{
+    list-style: none;
+}
+.main > ul{
+    list-style: none;
+    text-transform: capitalize;
+}
+.main > ul > li{
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 2px;
+    float: left;
+}
+.title{
+    margin: 120px 280px;
+    position: absolute;
+}
+.title h1{
+    color: white;
+    font-size: 55px;
+    margin-bottom: 30px;  
+    font-family: sans-serif;  
+}
+.title h3{
+    color: black;
+    font-family: 'Palette Mosaic', cursive;
+    font-size: 25px; 
+    position: absolute;
+    top: -100px;
+    left: -75px;
+}
+.title h1 span{
+    color: yellow;
+    font-family: 'Palette Mosaic', cursive;
+}
+.button{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: yellow;
+    color: black;
+}
+
+/*--------- Login Page ---------*/
+body{
+    background: url(back.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(65, 58, 58, 0.5));
+    text-align: center;
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.box input[type="text"],.box input[type="password"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: rgb(134, 116, 116);
+    border-radius: 24px;
+    transition: 0.25px;
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+    width: 270px;
+    border-color: palevioletred ;
+}
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid purple;
+    padding: 7px 25px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+.box input[type="submit"]:hover{
+    background: transparent;
+}
+.Create h1{
+    color: white);
+}
+.box span{
+    color: yellow;
+
+}
+
+/*--------- After Login ---------*/
+.titl{
+    margin: 120px 280px;
+    position: absolute;
+}
+.titl h1{
+    color: yellow;
+    font-size: 60px;
+    margin-bottom: 30px; 
+    font-family: 'Palette Mosaic', cursive; 
+}
+.titl h1 span{
+    color: yellow;
+}
+body para{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.para li{
+    color: wheat;
+    font-size: 30px;
+    font-family: 'work sans',sans-serif;
+    list-style: none;
+    letter-spacing: 2.5px;
+}
+.para ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+.para ul li::before{
+    content: "\2665";
+    color: yellow;
+    margin-right: 20px;
+}
+.butt{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: yellow;
+    color: black;
+}
+/*---- Contact Page ----*/
+
+.container{
+	width: 80%;
+	margin:50px auto;
+}
+.contact-box{
+	background: linear-gradient(rgba(197, 186, 186, 0.5),rgba(65, 58, 58, 0.5));
+	display:flex;
+}
+.contact-left{
+	flex-basis:60%;
+	padding:40px 60px;
+}
+.contact-right{
+	flex-basis:40%;
+	padding:40px;
+	background: black;
+	color:#fff;
+}
+h1{
+	margin-bottom: 10px;
+    color: yellow;
+    font-family: 'Palette Mosaic', cursive;
+}
+.container p{
+       margin-bottom: 40px;
+       color: whitesmoke;
+}
+.input-row{
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:20px;
+}
+.input-row .input-group{
+	flex-basis: 45%;
+}
+.input{
+	width: 100%;
+	border:none;
+	border-bottom:1px splid #ccc;
+	outline:none;
+	padding-bottom:5px;
+}
+textarea{
+	width:100p%;
+}
+button{
+	background-color: transparent;
+	width:50px;
+	border:none;
+	outline:none;
+	color:rgb(214, 187, 187);
+	height:25px;
+	border-radius: 30px;
+	margin-top:20px;
+	box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h3{
+	color:black;
+	font-weight:600;
+	margin-bottom:30px;
+}
+.contact-right h3{
+	font-weight:600;
+	margin-bottom:30px;
+}
+tr td:first-child{
+	color:white;
+	padding-right:20px;
+}
+tr td{
+	color:white;
+	padding-top:20px;
+}
